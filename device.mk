@@ -53,8 +53,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
 # DeviceSettings
+#PRODUCT_PACKAGES += \
+#    XiaomiParts
+
+# Doze
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XPerienceDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=xiaomi.sensor.pickup
 
 # File systems table
 PRODUCT_COPY_FILES += \
