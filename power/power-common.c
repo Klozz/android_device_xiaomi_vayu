@@ -76,7 +76,7 @@ void power_hint(power_hint_t hint, void *data)
         /* The power_hint has been handled. We can skip the rest. */
         return;
     }
-    switch(hint) {
+    switch (hint) {
         case POWER_HINT_VSYNC:
         break;
         case POWER_HINT_VR_MODE:
